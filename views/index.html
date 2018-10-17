@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+</head>
+<body>
+ <%include banner.html%>
+<div class="main">
+	       <div class="row content_top">
+			  <div class="col-md-3 col3">
+			     <div class="wrap_banner">
+			        <a href="#" class="fa-btn btn-1 btn-1e">Request A Catalog</a>
+				    <p>Nam liber tempor <br>cum soluta nobis eleifend</p>
+				 </div>
+			  </div>
+			  <div class="col-md-6 col6">
+				<div class="wrap_banner1">
+			        <h3>Exclusive<br>Merchendise and promotional items</h3>
+				    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu</p>
+				 </div>
+			  </div>
+			  <div class="col-md-3 colast">
+				<div class="wrap_banner2">
+			        <a href="#" class="fa-btn btn-1 btn-1e con_but">Best Quality</a>
+				    <p>Ut wisi enim ad<br> minim veniam, quis nostru</p>
+				 </div>
+			  </div>
+			</div>
+
+
+			<div class="bottom-grids">
+			  <div class="col-md-4 col4">
+           	  	<a href="single"><div class="bottom-grid1">
+				<span>
+						<%products.forEach(function(product){
+				%>
+					<div class="blur">
+					  <p class="sales"><%=product.prices%></p>
+					  <p class="ban1_text1"><%=product.content%></p>
+					</div>
+				<%})%>
+					<i class="plus"> </i>
+					<div class="clearfix"> </div>
+				 </span>
+				</div></a>
+				<a href="single"><div class="bottom-left-grid2">
+					<span>
+						<%products.forEach(function(product){
+				%>
+					<div class="blur">
+					  <p class="sales"><%=product.prices%></p>
+					  <p class="ban1_text1"><%=product.content%></p>
+					</div>
+					<%})%>
+					<i class="plus"> </i>
+					<div class="clearfix"> </div>
+				    </span>
+				 </div></a>
+				 <div class="feature_bg">
+					<i class="star"> </i>
+					<div class="clearfix"> </div>
+					<div class="service">
+					   <h3>Services</h3>
+					   <p> Eodem modo typi, qui nunc nobis videntur.</p>
+					</div>	
+			     </div>
+			     <div class="extra_wrap">
+			     	<ul class="gift span5">
+			     		<i class="icon"> </i>
+			     		<li class="gift_desc">
+			     			<h4><a href="#">Make A Gift</a></h4>
+			     			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+			     		</li>
+			     		<div class="clearfix"></div>
+			     	</ul>
+			     	<ul class="gift span5">
+			     		<i class="icon1"> </i>
+			     		<li class="gift_desc">
+			     			<h4><a href="#">Full Support</a></h4>
+			     			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+			     		</li>
+			     		<div class="clearfix"></div>
+			     	</ul>
+			     	<ul class="gift">
+			     		<i class="icon2"> </i>
+			     		<li class="gift_desc">
+			     			<h4><a href="#">Give us your Feedback</a></h4>
+			     			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+			     		</li>
+			     		<div class="clearfix"></div>
+			     	</ul>
+			     	<div class="but_service">
+			     	  <a href="#" class="btnc btn-c btn-1c">View All Services</a>
+			     	</div>
+			     </div>
+           	  </div>
+			<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+           	   <div class="col-md-4 bottom-grid2 ">
+           	  	<div class="bottom-grid2 bottom-mid">
+				  <div class="feature_bg">
+					<i class="rocket"> </i>
+					<div class="clearfix"> </div>
+					<div class="feature">
+					   <h2>Featured<br> Products</h2>
+					   <p> Eodem modo typi, qui nunc nobis videntur.</p>
+					</div>	
+				  </div>
+				  <div class="products">
+				  	<div class="product_top">
+				  		<ul class="product_title titlelast">
+				  		   <li class="s_head"><h3>The<br> Competitor<br> Glove</h3><br><p>SFI-5 & FIA</p></li>
+				  		   <li class="s_cart"><p class="price">$149.95</p>
+				  		      <a href="#" class="fa-btn1 btn-2 btn-1e1">Add to Cart</a>
+				  		   </li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	    <ul class="product_title">
+				  		   <li class="s_head"><img src="images/glove.jpg" class="img-responsive" alt=""/></li>
+				  		   <li class="s_cart"><p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p></li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	  </div>
+				  	  <div class="product_top">
+				  		<ul class="product_title titlelast">
+				  		   <li class="s_head"><h3>Pit Warrior<br> Crew<br> Helmet</h3><br><p>SFI-5 & FIA</p></li>
+				  		   <li class="s_cart"><p class="price">$149.95</p>
+				  		       <a href="#" class="fa-btn1 btn-2 btn-1e1">Add to Cart</a>
+				  		   </li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	    <ul class="product_title">
+				  		   <li class="s_head"><img src="images/helmet.jpg" class="img-responsive" alt=""/></li>
+				  		   <li class="s_cart"><p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p></li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	  </div>
+				  	  <div class="product_top">
+				  		<ul class="product_title titlelast">
+				  		   <li class="s_head"><h3>Over the<br> Wall Crew<br> Shoe</h3><br><p>SFI-5 & FIA</p></li>
+				  		   <li class="s_cart"><p class="price">$149.95</p>
+				  		      <a href="#" class="fa-btn1 btn-2 btn-1e1">Add to Cart</a>
+				  		   </li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	    <ul class="product_title">
+				  		   <li class="s_head"><img src="images/shoe.jpg" class="img-responsive" alt=""/></li>
+				  		   <li class="s_cart"><p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p></li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	  </div>
+				  	  <div class="product_top">
+				  		<ul class="product_title titlelast">
+				  		   <li class="s_head"><h3>The<br> Competitor<br> Glove</h3><br><p>SFI-5 & FIA</p></li>
+				  		   <li class="s_cart"><p class="price">$149.95</p>
+				  		      <a href="#" class="fa-btn1 btn-2 btn-1e1">Add to Cart</a>
+				  		   </li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	    <ul class="product_title">
+				  		   <li class="s_head"><img src="images/glove.jpg" class="img-responsive" alt=""/></li>
+				  		   <li class="s_cart"><p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p></li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	  </div>
+				  	  <div class="product_top product_grid">
+				  		<ul class="product_title titlelast">
+				  		   <li class="s_head"><h3>Pit Warrior<br> Crew<br> Helmet</h3><br><p>SFI-5 & FIA</p></li>
+				  		   <li class="s_cart"><p class="price">$149.95</p>
+				  		      <a href="#" class="fa-btn1 btn-2 btn-1e1">Add to Cart</a>
+				  		   </li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	    <ul class="product_title">
+				  		   <li class="s_head"><img src="images/helmet.jpg" class="img-responsive" alt=""/></li>
+				  		   <li class="s_cart"><p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p></li>
+				  		   <div class="clearfix"> </div>
+				  		</ul>
+				  	  </div>
+				  	 </div>		
+				</div>
+           	  </div>
+           	  <div class="col-md-4 bottom-last">
+           	  	<a href="single"><div class="bottom-right_grid2">
+					<span>
+						<%products.forEach(function(product){
+				%>
+					<div class="blur">
+					  <p class="sales"><%=product.prices%></p>
+					  <p class="ban1_text1"><%=product.content%></p>
+					</div>
+					<%})%>
+					<i class="plus"> </i>
+					<div class="clearfix"> </div>
+				    </span>
+				 </div></a>
+				 <div class="feature_bg">
+					<i class="discover"> </i>
+					<div class="clearfix"> </div>
+					<div class="service">
+					   <h3>Our Story</h3>
+					   <p> Eodem modo typi, qui nunc nobis videntur.</p>
+					</div>	
+			     </div>
+			     <div class="feature_desc">
+			     	<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores</p>
+			     </div>
+			     <div class="feature_bg">
+					<i class="book"> </i>
+					<div class="clearfix"> </div>
+					<div class="service">
+					   <h3>Articles</h3>
+					   <p> Eodem modo typi, qui nunc nobis videntur.</p>
+					</div>	
+			     </div>
+			     <div class="article_grid">
+				    <ul class="article_box">
+					   <li class="article_img"><img src="images/a1.jpg" class="img-responsive" alt=""/></li>
+					   <li class="article_desc">
+						  <h5><a href="#">Eodem modo typi</a></h5>
+						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+						  <a href="#" class="link">Read More</a>
+						</li>
+					    <div class="clearfix"></div>
+					 </ul>	
+					 <ul class="article_box">
+					   <li class="article_img"><img src="images/a2.jpg" class="img-responsive" alt=""/></li>
+					   <li class="article_desc">
+						  <h5><a href="#">Eodem modo typi</a></h5>
+						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+						  <a href="#" class="link">Read More</a>
+						</li>
+					    <div class="clearfix"></div>
+					 </ul>	
+					  <ul class="article_box">
+					   <li class="article_img"><img src="images/a3.jpg" class="img-responsive" alt=""/></li>
+					   <li class="article_desc">
+						  <h5><a href="#">Eodem modo typi</a></h5>
+						  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+						  <a href="#" class="link">Read More</a>
+						</li>
+					    <div class="clearfix"></div>
+					 </ul>	
+				 </div>
+				 <div class="but_article">
+			     	  <a href="#" class="btnc btn-c btn-1c">View All Services</a>
+			     	</div>
+           	  </div>
+           	  <div class="clearfix"></div>
+           </div>
+           <div class="promo">
+           	  <div class="container">
+           	  	<h3>New Products Every day</h3>
+           	  	<h4>Over 1500 New Items!</h4>
+           	  	<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum</p>
+           	  	<a href="#" class="fa-btn btn-1 btn-1e con_but">Get Yours Now</a>
+           	  </div>
+           </div>
+	<%include bottom.html%>
+        </div>
+
+</body>
+</html>		

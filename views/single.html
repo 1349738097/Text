@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Single</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<!-- Include the Etalage files -->
+<link rel="stylesheet" href="css/etalage.css">
+<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+<%include banner.html%>
+<div class="main">
+  <div class="product_wrapper">
+  	<div class="container">
+  		<div class="dreamcrub">
+			   	 <ul class="breadcrumbs">
+                    <li class="home">
+                       <a href="index" title="Go to Home Page">Home</a>&nbsp;&nbsp;
+                       <span>&gt;</span>
+                    </li>
+                    <li class="home">&nbsp;
+                        Product&nbsp;&nbsp;
+                          <span>&gt;</span>
+                    </li>
+                    <li class="home">&nbsp;
+                        nulla facilisis&nbsp;
+                    </li>
+                  </ul>
+        </div>
+		<div class="row">
+			<div class="col-md-3 single_left">
+			   <div class="block block-layered-nav first">
+                  <p class="block-subtitle">Shopping Options</p>
+            <dl id="narrow-by-list">
+                 <dt class="odd">Price</dt>
+                    <dd class="odd">
+					<ol>
+					    <li>
+					                <a href="#"><span class="price">$100.00</span> - <span class="price">$199.99</span></a>
+					                        (3)
+					            </li>
+					    <li>
+					                <a href="#"><span class="price">$200.00</span> - <span class="price">$299.99</span></a>
+					                        (2)
+					            </li>
+					    <li>
+					                <a href="#"><span class="price">$300.00</span> and above</a>
+					                        (1)
+					            </li>
+					</ol>
+					</dd>
+					                                                                    <dt class="even">Manufacturer</dt>
+					                    <dd class="even">
+					<ol>
+					    <li>
+					                <a href="#">Ferrari</a>
+					                        (1)
+					            </li>
+					    <li>
+					                <a href="#">Honda</a>
+					                        (1)
+					            </li>
+					    <li>
+					                <a href="#">McLaren Mercedes</a>
+					                        (2)
+					            </li>
+					    <li>
+					                <a href="#">Renault</a>
+					                        (1)
+					            </li>
+					    
+					</ol>
+					</dd>
+                                                                    <dt class="last odd">Color</dt>
+                    <dd class="last odd">
+					<ol>
+					    <li>
+					                <a href="#">black</a>
+					                        (2)
+					            </li>
+					    <li>
+					                <a href="#">grey</a>
+					                        (2)
+					            </li>
+					    <li>
+					                <a href="#">white</a>
+					                        (2)
+					            </li>
+					</ol>
+					</dd>
+                                            </dl>
+          
+                </div>
+				<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+	             <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
+				  <script src="js/jquery.nivo.slider.js"></script>
+				    <script type="text/javascript">
+				    $(window).load(function() {
+				        $('#slider').nivoSlider();
+				    });
+				    </script>
+		      <div class="slider-wrapper theme-default">
+	              <div id="slider" class="nivoSlider">
+	                <img src="images/s1.jpg"  alt="" />
+	               	<img src="images/s2.jpg"  alt="" />
+	                <img src="images/s3.jpg"  alt="" />
+	              </div>
+			  </div>
+			  <div class="tags">
+				    	<h4 class="tag_head">Popular Tags</h4>
+				         <ul class="tags_links">
+							<li><a href="#">Kitesurf</a></li>
+							<li><a href="#">Super</a></li>
+							<li><a href="#">Duper</a></li>
+							<li><a href="#">Theme</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Equipment</a></li>
+							<li><a href="#">Best</a></li>
+							<li><a href="#">Accessories</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">Super</a></li>
+							<li><a href="#">Duper</a></li>
+							<li><a href="#">Theme</a></li>
+							<li><a href="#">Responsiv</a></li>
+					        <li><a href="#">Women</a></li>
+							<li><a href="#">Equipment</a></li>
+						</ul>
+						<a href="#" class="link1">View all tags</a>
+				 </div>
+		   </div>
+		   <div class="col-md-9">
+		   	 <div class="singel_right">
+			     <div class="labout span_1_of_a1">
+				<!-- start product_slider -->
+				     <ul id="etalage">
+							<li>
+								<a href="optionallink">
+									<img class="etalage_thumb_image" src="images/single1.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="images/single1.jpg" class="img-responsive" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single2.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single2.jpg" class="img-responsive" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single3.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single3.jpg" class="img-responsive" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single1.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single1.jpg" class="img-responsive" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single2.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single2.jpg" class="img-responsive" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single3.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single3.jpg" class="img-responsive" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/single1.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/single1.jpg" class="img-responsive" />
+							</li>
+						</ul>
+					<!-- end product_slider -->
+			  </div>
+			  <div class="cont1 span_2_of_a1">
+				<h1>nulla facilisis</h1>
+				<p class="availability in-stock">Availability: <span>In stock</span></p>
+			    <p class="single_price">$149.95</p>
+				<p class="single_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+			   <div class="quantity">	
+				 <ul class="prosuct-qty">
+					<span>Quantity:</span>
+					  <select>
+							<option>1</option>
+						    <option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						    <option>6</option>
+					   </select>
+				 </ul>
+				 <div class="cart_btn">
+					 <a href="#">Add to Cart</a>
+				</div>
+			    <div class="clearfix"></div>
+			  </div>
+			  <div class="wish-list">
+				 	<ul>
+				 		<li class="wish"><a href="#">Add to Wishlist</a></li>
+				 	    <li class="compare"><a href="#">Add to Compare</a></li>
+				 	</ul>
+			  </div>
+			  <ul class="social_single">
+				<li><a href=""> <i class="fb1"> </i> </a></li>
+				<li><a href=""><i class="tw1"> </i> </a></li>
+				<li><a href=""><i class="g1"> </i> </a></li>
+				<li><a href=""><i class="rss"> </i> </a></li>
+			  </ul>
+			</div>
+			<div class="clearfix"></div>
+		   </div>
+		   <div class="toogle">
+     	     <h3>Product Details</h3>
+     	     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+           </div>
+           <div class="toogle product_tag">
+     	     <h3>Product Tags</h3>
+     	     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+     	     <h4>Add Your Tags:</h4>
+     	     <div class="input-box">
+				<input type="text" value="">
+			 </div>
+			<div class="button"><span><a href="#">Add Tags</a></span></div>
+           </div>
+		  </div>
+		</div>
+	 </div>
+   </div>
+  </div>
+<%include bottom.html%>
+        </div>
+
+</body>
+</html>		
